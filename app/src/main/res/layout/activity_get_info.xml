@@ -7,15 +7,435 @@
     android:background="#FFC107"
     tools:context=".GetInfo">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="Hi, what kind of player are you ?"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:fontFamily="casual"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-130dp"
+        tools:layout_editor_absoluteY="-44dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Hi, what kind of player are you ?"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:fontFamily="casual" />
+
+        //Explanation
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Please grade these mecanics between 1 and 10."
+            app:fontFamily="casual" />
+
+        //1st category : Action choice games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tite_action_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Action choice games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_action_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, our choices change the run of play. \n Examples : Colt Express, Five tribes."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_action_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+
+        //2nd category : Group games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Title_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Group games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, choices are collective. \n Examples : Pandemic, Werewolf game."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        //3rd category : Movement games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tite_movement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Movement games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_movement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, you move items on the board. \n Examples : Forbidden island, Sonar Captain."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_movement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+
+        4th category : role-playing games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tite_role_playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Role-playing games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_role_playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, you embody roles that influence your capabilities. \n Examples : T.I.M.E story, Arkham Horror."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_role_playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        5th category : construction games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tite_construction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Construction games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_construction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, the players build the game with which they will play. \n Examples : Dominion, 7 wonders."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_construction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+
+        6th category : Negociation games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tite_negociation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Negociation games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_negociation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, there are negotiation and auction phases. \n Examples : Bohnanza, Through the Ages."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_negociation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        7th category :Battlefield management games
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Tite_battlefield_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Battlefield Management games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_battlefield_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, players fight on a battle pattern. \n Examples : Cyclade,  Summoner wars."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_battlefield_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        8th category : luck games
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Tite_luck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Games based on luck"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_luck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, there are elements of chances. \n Examples : Catania settlers, Camel up."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_luck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        9th category : Malus games
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Tite_malus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Games based on malus"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_malus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, there are malus (time, point...). \n Examples : Clanck!, Mission not possible"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_malus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        10th category : Modular board game
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Tite_modular_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Modular board games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_modular_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, the game evolves on a non-static board (changing from one game to another or during the game). \n Examples : Terraforming mars, Five tribes"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_modular_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+        11th category : memory games
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Tite_memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="Memory games"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <TextView
+                android:id="@+id/Explanation_memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="In theses games, players call their memory to win the game. \n Examples : Time’s up, Agent trouble."
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="casual" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isIndicator="false"
+                android:numStars="10"
+                android:scrollbarSize="3dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
