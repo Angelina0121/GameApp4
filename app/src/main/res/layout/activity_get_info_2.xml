@@ -506,6 +506,13 @@
                 android:scrollbarSize="3dp" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/button_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:padding="60px"
+            android:text="See the result !" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

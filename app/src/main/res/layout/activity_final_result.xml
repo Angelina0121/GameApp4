@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Final_result">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="108dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Results"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:fontFamily="cursive" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/gamesToTry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="The five games you need to try are :"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //First game
+        <TextView
+            android:id="@+id/firstGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="First game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Second game
+        <TextView
+            android:id="@+id/secondGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Second game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Third game
+        <TextView
+            android:id="@+id/thirdGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Third game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Fourth game
+        <TextView
+            android:id="@+id/fouthGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Fourth game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Fifth game
+        <TextView
+            android:id="@+id/fifthGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Fifth game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        <Button
+            android:id="@+id/button_backHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:padding="60px"
+            android:text="Try again ?" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

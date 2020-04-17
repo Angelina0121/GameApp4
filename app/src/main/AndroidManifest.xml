@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".get_info_2"></activity>
+        <activity android:name=".Final_result"></activity>
+        <activity android:name=".get_info_2" />
         <activity android:name=".GetInfo" />
         <activity android:name=".MainActivity">
             <intent-filter>
