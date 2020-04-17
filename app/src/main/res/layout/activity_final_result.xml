@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFC107"
     tools:context=".Final_result">
 
     <LinearLayout
@@ -40,6 +41,7 @@
             app:fontFamily="casual" />
 
         //First game
+
         <TextView
             android:id="@+id/firstGame"
             android:layout_width="match_parent"
@@ -51,6 +53,7 @@
             app:fontFamily="casual" />
 
         //Second game
+
         <TextView
             android:id="@+id/secondGame"
             android:layout_width="match_parent"
@@ -62,6 +65,7 @@
             app:fontFamily="casual" />
 
         //Third game
+
         <TextView
             android:id="@+id/thirdGame"
             android:layout_width="match_parent"
@@ -73,6 +77,7 @@
             app:fontFamily="casual" />
 
         //Fourth game
+
         <TextView
             android:id="@+id/fouthGame"
             android:layout_width="match_parent"
@@ -84,6 +89,7 @@
             app:fontFamily="casual" />
 
         //Fifth game
+
         <TextView
             android:id="@+id/fifthGame"
             android:layout_width="match_parent"
