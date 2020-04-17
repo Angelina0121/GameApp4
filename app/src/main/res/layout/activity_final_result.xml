@@ -93,13 +93,67 @@
             app:fontFamily="casual" />
 
         //Fifth game
-
         <TextView
             android:id="@+id/fifthGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
             android:text="Fifth game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Sixth game
+        <TextView
+            android:id="@+id/sixthGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Sixth game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Seventh game
+        <TextView
+            android:id="@+id/seventhGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Seventh game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Eighth game
+        <TextView
+            android:id="@+id/eighthGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Eighth game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Ninth game
+        <TextView
+            android:id="@+id/ninthGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Ninth game"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:fontFamily="casual" />
+
+        //Tenth game
+        <TextView
+            android:id="@+id/TenthGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Tenth game"
             android:textColor="#000000"
             android:textSize="18sp"
             app:fontFamily="casual" />
