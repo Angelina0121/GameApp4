@@ -1,4 +1,2 @@
-language : java
-java:
-  - "stable"
-script: gulp travis
+language: android
+dist: trusty
